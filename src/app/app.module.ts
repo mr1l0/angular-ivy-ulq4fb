@@ -9,6 +9,7 @@ import { AppComponent } from "./app.component";
 import { HelloComponent } from "./hello.component";
 import { AuthViewComponent } from "./auth-view/auth-view.component";
 import { MatInputModule } from "@angular/material/input";
+import { AuthService } from './auth.service';
 
 @NgModule({
   imports: [
@@ -19,6 +20,7 @@ import { MatInputModule } from "@angular/material/input";
     MatInputModule
   ],
   declarations: [AppComponent, HelloComponent, AuthViewComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [AuthService]
 })
 export class AppModule {}
